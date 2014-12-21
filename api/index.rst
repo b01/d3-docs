@@ -7,9 +7,9 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   Kshabazz/BattleNet/D3/Connections/index
-   Kshabazz/BattleNet/D3/Models/index
-   Kshabazz/BattleNet/D3/Skills/index
+   Connections <Kshabazz/BattleNet/D3/Connections/index>
+   Models <Kshabazz/BattleNet/D3/Models/index>
+   Skills <Kshabazz/BattleNet/D3/Skills/index>
 
 Indices and tables
 ==================
