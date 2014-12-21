@@ -1,6 +1,6 @@
-"""""""""""""""""""""
-Diable 3 REST Library
-"""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""
+Kshabazz\\BattleNet\\D3\\Connections
+""""""""""""""""""""""""""""""""""""
 
 .. php:namespace: Kshabazz\\BattleNet\\D3\\Connections
 

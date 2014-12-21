@@ -1,5 +1,5 @@
 ==
-D3
+D3 - Diablo 3 REST Library
 ==
 
 -----------
