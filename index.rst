@@ -10,8 +10,8 @@ A PHP library for accessing Battle.net Diablo 3 REST service.
 
 Contents:
 
-..toctree::
-  :maxdepth: 2
+.. toctree::
+   :maxdepth: 2
 
 Indices and tables
 ==================
