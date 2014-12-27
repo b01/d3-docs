@@ -23,11 +23,11 @@ Kshabazz\\BattleNet\\D3\\Connections\\Http
         Constructor
 
         :type $pApiKey: string
-        :param $pApiKey:
+        :param $pApiKey: Key obtained for use with Diablo 3 REST service.
         :type $pBattleNetId: string
-        :param $pBattleNetId:
+        :param $pBattleNetId: BattleNet ID.
         :type $pClient: \Kshabazz\Slib\HttpClient
-        :param $pClient:
+        :param $pClient: Client for making HTTP request.
         :type $pLocale: string
         :param $pLocale:
 
@@ -37,7 +37,7 @@ Kshabazz\\BattleNet\\D3\\Connections\\Http
 
     .. php:method:: battleNetUrlSafeId()
 
-        Get BattleNet ID
+        Get BattleNet ID with the pound symbol replaced with a dash.
 
         :returns: string BattleNet ID
 
@@ -50,36 +50,52 @@ Kshabazz\\BattleNet\\D3\\Connections\\Http
     .. php:method:: getHero($pHeroId)
 
         Request Hero JSON from Battle.Net.
-        ex:
-        https://us.api.battle.net/d3/profile/<battleNetIdName>-<battleNetIdNumber>/hero/<hero-id>?locale=<string>&apikey=<>
-        Note: Leave off the trailing '/' when setting
 
-        :param $pHeroId:
+        <code>
+        <?php
+        // Make a request to:
+        //
+        https://us.api.battle.net/d3/profile/<battleNetIdName>-<battleNetIdNumber>/hero/<hero-id>?locale=<string>&apikey=<>
+        // Note: Leave off the trailing '/' when setting
+        ?>
+        </code>
+
+        :type $pHeroId: int
+        :param $pHeroId: Hero ID.
         :returns: null|string
 
     .. php:method:: getItem($pItemId)
 
-        Get item JSON from Battle.Net D3 API.
-        ex:
-        https://us.battle.net/api/d3/data/item/COGHsoAIEgcIBBXIGEoRHYQRdRUdnWyzFB2qXu51MA04kwNAAFAKYJMD
+        Make a request to the API to get an item (JSON).
 
-        :param $pItemId:
-        :returns: mixed|null
+        <code>
+        // Make a request to:
+        //
+        https://us.battle.net/api/d3/data/item/COGHsoAIEgcIBBXIGEoRHYQRdRUdnWyzFB2qXu51MA04kwNAAFAKYJMD
+        </code>
+
+        :type $pItemId: string
+        :param $pItemId: Can be obtained from items a hero has equipped.
+        :returns: string|null API JSON data.
 
     .. php:method:: getItemsAsModels($pItemHashes)
 
         For each item the hero has equipped construct an Model\Item and return
         them as an array.
-        This is costly, it make a HTTP request for each item on the hero.
+        This is costly, it makes an HTTP request for each item in the list.
 
         :type $pItemHashes: array
-        :param $pItemHashes: List of item hashes.
-        :returns: array|null
+        :param $pItemHashes: List of item hash IDs.
+        :returns: array|null Item models
 
     .. php:method:: getProfile()
 
-        ex:
+        Get a profile from Battle.net.
+        <code>
+        // Makes a request to:
         https://us.api.battle.net/d3/profile/<battleNetIdName>-<battleNetIdNumber>/
+
+        </code>
 
         :returns: null|string
 
