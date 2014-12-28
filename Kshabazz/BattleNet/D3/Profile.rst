@@ -1,8 +1,8 @@
-----------------------------------------
-Kshabazz\\BattleNet\\D3\\Models\\Profile
-----------------------------------------
+--------------------------------
+Kshabazz\\BattleNet\\D3\\Profile
+--------------------------------
 
-.. php:namespace: Kshabazz\\BattleNet\\D3\\Models
+.. php:namespace: Kshabazz\\BattleNet\\D3
 
 .. php:class:: Profile
 

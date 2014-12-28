@@ -1,13 +1,18 @@
--------------------------------------
-Kshabazz\\BattleNet\\D3\\Models\\Item
--------------------------------------
+-----------------------------
+Kshabazz\\BattleNet\\D3\\Item
+-----------------------------
 
-.. php:namespace: Kshabazz\\BattleNet\\D3\\Models
+.. php:namespace: Kshabazz\\BattleNet\\D3
 
 .. php:class:: Item
 
     Class Item
-    http://us.battle.net/api/d3/data/item/Cj0I-bvTgAsSBwgEFdosyssdb2mxyh10HmzAHfKS3AgdcIt38CILCAEVbEIDABgWICAwiQI4_AJAAFAMYJUDGMvMrsMGUABYAg&extra=0&showClose=1
+
+    <code>
+    <?php
+    // http://us.battle.net/api/d3/data/item/Cj0I-bvTgAsSBwgEFdosyssdb2mxyh10HmzAHfKS3AgdcIt38CILCAEVbEIDABgWICAwiQI4_AJAAFAMYJUDGMvMrsMGUABYAg&extra=0&showClose=1
+    ?>
+    </code>
 
     .. php:attr:: offHandTypes
 

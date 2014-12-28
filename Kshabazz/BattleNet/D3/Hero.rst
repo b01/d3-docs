@@ -1,8 +1,8 @@
--------------------------------------
-Kshabazz\\BattleNet\\D3\\Models\\Hero
--------------------------------------
+-----------------------------
+Kshabazz\\BattleNet\\D3\\Hero
+-----------------------------
 
-.. php:namespace: Kshabazz\\BattleNet\\D3\\Models
+.. php:namespace: Kshabazz\\BattleNet\\D3
 
 .. php:class:: Hero
 
