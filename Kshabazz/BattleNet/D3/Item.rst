@@ -50,10 +50,15 @@ Kshabazz\\BattleNet\\D3\\Item
 
     .. php:method:: effects()
 
-        Get name of an items special effects.
-        Get list string of item effect.
+        Get list string of item special effects.
 
         :returns: string
+
+    .. php:method:: flavorText()
+
+        Get flavor text.
+
+        :returns: string|null
 
     .. php:method:: id()
 

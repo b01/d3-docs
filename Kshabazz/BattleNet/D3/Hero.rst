@@ -15,11 +15,67 @@ Kshabazz\\BattleNet\\D3\\Hero
         :type $pJson: string
         :param $pJson:
 
+    .. php:method:: arcaneResist()
+
+        Get arcane resist.
+
+        :returns: int
+
+    .. php:method:: armor()
+
+        Get armor stat.
+
+        :returns: int
+
+    .. php:method:: attackSpeed()
+
+        Get attack speed.
+
+        :returns: float
+
     .. php:method:: characterClass()
 
         Character class
 
-        :returns: string
+        :returns: string (barbarian|crusader|demon-hunter|monk|witch-doctor|wizard)
+
+    .. php:method:: coldResist()
+
+        Get cold resist.
+
+        :returns: int
+
+    .. php:method:: criticalHitChance()
+
+        :returns: float
+
+    .. php:method:: criticalHitDamage()
+
+        :returns: float
+
+    .. php:method:: dexterity()
+
+        Get dexterity.
+
+        :returns: int
+
+    .. php:method:: eliteKills()
+
+        Get number of elites killed.
+
+        :returns: int
+
+    .. php:method:: fireResist()
+
+        Get fire resist.
+
+        :returns: int
+
+    .. php:method:: gender()
+
+        Get gender.
+
+        :returns: int 0 for male, 1 for woman.
 
     .. php:method:: get($pProperty, $pType = 'string')
 
@@ -31,10 +87,6 @@ Kshabazz\\BattleNet\\D3\\Hero
         :param $pType:
         :returns: mixed
 
-    .. php:method:: hardcore()
-
-        :returns: bool
-
     .. php:method:: highestProgression()
 
         Get the highest level completed.
@@ -42,6 +94,12 @@ Kshabazz\\BattleNet\\D3\\Hero
         :returns: string
 
     .. php:method:: id()
+
+        :returns: int
+
+    .. php:method:: intelligence()
+
+        Get intelligence.
 
         :returns: int
 
@@ -57,6 +115,18 @@ Kshabazz\\BattleNet\\D3\\Hero
 
         :type $pHttp: Http
         :param $pHttp:
+        :returns: bool
+
+    .. php:method:: isHardCore()
+
+        Get hardcore flag.
+
+        :returns: bool
+
+    .. php:method:: isSeasonal()
+
+        Get seasonal flag.
+
         :returns: bool
 
     .. php:method:: items()
@@ -89,6 +159,12 @@ Kshabazz\\BattleNet\\D3\\Hero
 
         :returns: int
 
+    .. php:method:: lightningResist()
+
+        Get lightning resistance.
+
+        :returns: int
+
     .. php:method:: name()
 
         Get name.
@@ -98,6 +174,18 @@ Kshabazz\\BattleNet\\D3\\Hero
     .. php:method:: paragonLevel()
 
         Get paragon level.
+
+        :returns: int
+
+    .. php:method:: physicalResist()
+
+        Get physical resistance.
+
+        :returns: int
+
+    .. php:method:: poisonResist()
+
+        Get poison resistance.
 
         :returns: int
 
@@ -119,49 +207,17 @@ Kshabazz\\BattleNet\\D3\\Hero
 
         :returns: array
 
-    .. php:method:: skills()
-
-        Get character skills.
-
-        :returns: array
-
-    .. php:method:: armor()
-
-        Get armor stat.
-
-        :returns: int
-
-    .. php:method:: attackSpeed()
-
-        Get attack speed.
-
-        :returns: float
-
-    .. php:method:: criticalHitChance()
-
-        :returns: float
-
-    .. php:method:: criticalHitDamage()
-
-        :returns: float
-
     .. php:method:: punchDamage()
 
         Get damage you can do with a single punch.
 
         :returns: float
 
-    .. php:method:: dexterity()
+    .. php:method:: skills()
 
-        Get dexterity.
+        Get character skills.
 
-        :returns: int
-
-    .. php:method:: intelligence()
-
-        Get intelligence.
-
-        :returns: int
+        :returns: array
 
     .. php:method:: primaryAttributeBonus()
 
